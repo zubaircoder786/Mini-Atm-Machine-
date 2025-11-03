@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine System</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Keeping this section empty as all JS logic is in app.js
+  </script>
+</head>
+<body>
+    <div class="atm-container">
+        <h1>Welcome to ATM</h1>
+        <div class="balance-section">
+            <h2>Current Balance: $<span id="balance">1000</span></h2>
+        </div>
+        <div class="transaction-section">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <button onclick="withdraw()">Withdraw</button>
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="checkBalance()">Check Balance</button>
+        </div>
+        <div class="message-section">
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
